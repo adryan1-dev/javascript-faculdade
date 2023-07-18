@@ -1,4 +1,4 @@
-let idade = 19, xp = 3, educaçao = 'Superior', certificado = true
+let idade = 13, xp = 2, educaçao = 'Ensino Medio', certificado = false
 
 if(idade >= 18 && xp >= 3 && educaçao == 'Superior' && certificado == true){
     console.log('Você está elegivel para a vaga')
@@ -10,7 +10,7 @@ if(idade >= 18 && xp >= 3 && educaçao == 'Superior' && certificado == true){
     } else {
         verIdade = 'Inapto'
     }
-    console.log(`Idade mínima é de 18 anos, a sua idade é: ${idade} (${verIdade})`)
+    console.log(`Idade mínima é de 18 anos, a sua idade é: ${idade} anos (${verIdade})`)
     
     //Verificação de Experiência
     let verXp = ''
@@ -19,8 +19,11 @@ if(idade >= 18 && xp >= 3 && educaçao == 'Superior' && certificado == true){
     } else {
         verXp = 'Inapto'
     }
-    console.log(`Experiência minima é de 3 anos, você tem: ${xp} (${verXp})`)
-
+    if( xp == 1){
+    console.log(`Experiência minima é de 3 anos, você tem: ${xp} ano (${verXp})`)
+    } else{
+        console.log(`Experiência minima é de 3 anos, você tem: ${xp} anos (${verXp})`)
+    }
     //Verificação de Educação
     let verEdu = ''
     if(educaçao == 'Superior'){
